@@ -36,6 +36,8 @@ dependencies {
     compile('com.h2database:h2')                                        // 인메모리 관계형 데이터베이스. 의존성 만으로 처리 가능
     compile('org.springframework.boot:spring-boot-starter-mustache')    // 머스테치 스타터 의존성
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    /* 스프링 시큐리티 : 소셜로그인 등 클라이언트 입장에서 소셜 기능 구현시 필요한 의존성 */
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
 }
 
 
