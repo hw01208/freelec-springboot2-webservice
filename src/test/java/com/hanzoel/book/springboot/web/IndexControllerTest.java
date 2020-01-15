@@ -19,12 +19,12 @@ public class IndexControllerTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void 메인페이지_로딩() {
+    public void mainPage_loading() {
 
         //when
         String body = this.restTemplate.getForObject("/", String.class);
 
         //then
-        assertThat(body).contains("스프링 부트로 시작하는 웹 서비스");    // 라는 문자열이 포함되어 있는지만 비교
+        assertThat(body).contains("Spring Boot Web Service Ver.2");    // 라는 문자열이 포함되어 있는지만 비교
     }
 }
