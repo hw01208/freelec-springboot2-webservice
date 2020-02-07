@@ -20,3 +20,5 @@ notifications:
     recipients:
       - youngdev@naver.com
 
+before_install:
+  - chmod +x gradlew
