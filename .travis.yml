@@ -14,12 +14,6 @@ cache:
 
 script: "./gradlew clean build"
 
-# CI 실행 완료시 메일로 알람
-notifications:
-  email:
-    recipients:
-      - youngdev@naver.com
-
 before_install:
   - chmod +x gradlew
 
@@ -38,3 +32,10 @@ deploy:
   acl: private # zip파일 접근을 private으로
   local_dir: deploy # before_deploy에서 생성한 디렉토리
   wait-until-deployed: true
+
+
+# CI 실행 완료시 메일로 알람
+notifications:
+  email:
+    recipients:
+      - youngdev@naver.com
